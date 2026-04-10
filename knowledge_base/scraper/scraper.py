@@ -8,7 +8,7 @@ from pages import STATIC_PAGES, DYNAMIC_SECTIONS
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "raw")
 
 
-def fetch_page(url):
+def fetch_page_static(url):
     """Fetch the HTML content of a URL."""
     headers = {
         # Pretend to be a browser — some sites block Python requests without this
@@ -18,6 +18,23 @@ def fetch_page(url):
     response.raise_for_status()  # Raises an error if the request failed
     response.encoding = response.apparent_encoding
     return response.text
+
+
+def fetch_page_js(url):
+    """JavaScript-rendered fetch - for pages with dynamic content"""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        page.goto(url, wait_until="networkidle") #wait until JS finishes loading
+        html = page.content()
+        browser.close()
+        return html
+
+def fetch_page(url, js_render=False):
+    if js_render:
+        return fetch_page_js(url)
+    return fetch_page_static(url)
 
 
 def extract_text(html):
@@ -107,7 +124,8 @@ def scrape_all():
     for page in pages_to_scrape:
         print(f"Scraping: {page['url']}")
         try:
-            html = fetch_page(page["url"])
+            js = page.get("js_render", False)
+            html = fetch_page(page["url"], js_render=js)
             text = extract_text(html)
             save_text(text, page["filename"])
             print(f"  Words extracted: {len(text.split())}")
