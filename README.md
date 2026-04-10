@@ -1,6 +1,8 @@
+<<<<<<< HEAD
 # Digix AI Bot
 
 A knowledge-base pipeline for building a RAG (Retrieval-Augmented Generation) chatbot for [digix-ai.com](https://digix-ai.com). The pipeline scrapes the Digix AI website, cleans and chunks the text, and enriches every chunk with metadata so it can be embedded and stored in a vector database.
+This project was implemented for the purposes of a graduation project where we collaborated with DigixAI - a subsidary of Dinarak offering AI solutions and courses
 
 ---
 
