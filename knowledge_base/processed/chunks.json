@@ -1,0 +1,434 @@
+[
+  {
+    "id": "about_chunk_0",
+    "text": "About Us\n\nOur Story\nJordanian Roots, Global Vision\nSince 2016, following a decade of success in building Jordan’s fintech sector through 'Dinarak', Digix AI was launched to lead the era of artificial intelligence.\n\nOur Vision\nThe Leading AI & Global Training Hub\nin the Middle East.\n\nOur Mission\nDelivering AI solutions\nthat drive meaningful impact and sustainable growth, alongside practical training that creates leaders—not just employees—with measurable KPIs.\n\nOutcomes\nSustainable Growth\nMeasurable KPIs",
+    "metadata": {
+      "source_file": "about.txt",
+      "category": "about",
+      "language": "en",
+      "url": "https://digix-ai.com/about-us",
+      "chunk_index": 0,
+      "char_count": 508
+    }
+  },
+  {
+    "id": "about_chunk_1",
+    "text": "Why DGIXIAI Stands Out?\nWhere Global Intelligence Meets Local Results\nGlobal Partnerships\nPartners with Stanford, MIT, and over 50+ global organizations. Trusted by global institutions.\nProven Results\nAchieve KPIs within 90 days, with measurable outcomes and satisfied clients.\nWorldwide Training\nWe offer training in Arabic/English - Practical - Real-world case studies - Interactive.\nSmart Solutions\nAI-powered solutions - Data-driven decisions - Predictive analytics - Smart recommendations.\nReliable Support\nSupport and troubleshooting 24/7 with service level agreements (SLAs).\nContinuous Support\nOngoing support and updates with SLAs to ensure seamless operations.\nTrusted Clients\nGovernments - Universities - USAID - GIZ - Mercy Corps - CVDB",
+    "metadata": {
+      "source_file": "about.txt",
+      "category": "about",
+      "language": "en",
+      "url": "https://digix-ai.com/about-us",
+      "chunk_index": 1,
+      "char_count": 748
+    }
+  },
+  {
+    "id": "about_chunk_2",
+    "text": "Our Presence Knows No Bounds\nRegional Expansion\nPalestine\nIraq\nOman\nQatar\nSaudi Arabia\nSyria\nLibya\nTurkey",
+    "metadata": {
+      "source_file": "about.txt",
+      "category": "about",
+      "language": "en",
+      "url": "https://digix-ai.com/about-us",
+      "chunk_index": 2,
+      "char_count": 105
+    }
+  },
+  {
+    "id": "about_ar_chunk_0",
+    "text": "من نحن\n\nقصتنا\nجذور أردنية برؤية عالمية\nمنذ عام 2016، وبعد عقد من النجاح في تأسيس قطاع التكنولوجيا المالية عبر \"دينارك\"، انطلقت Digix AI لتقود عصر الذكاء الاصطناعي.\n\nرؤيتنا\nمركز الذكاء الاصطناعي\nوالتدريب العالمي الأبرز في الشرق الأوسط.\n\nرسالتنا\nتقديم حلول ذكاء اصطناعي\nتصنع فرقاً ونمواً مستداماً، وتدريب عملي يخلق قادة لا موظفين ومؤشرات أداء قابلة للقياس\n\nالنتائج\nنمو مستدام\nمؤشرات أداء قابلة للقياس",
+    "metadata": {
+      "source_file": "about_ar.txt",
+      "category": "about",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/about-us",
+      "chunk_index": 0,
+      "char_count": 398
+    }
+  },
+  {
+    "id": "about_ar_chunk_1",
+    "text": "لماذا DGIXIAI تتفوق؟\nعندما يلتقي الذكاء العالمي بالنتائج المحلية\nمصداقيّة عالميّة\nإرث MIT وStanford وخبرات مع أكثر من 50 شركة عالميّة، وفرق تسليم عالميّة.\nنتائج مُثبتة\nأثر KPI خلال 90 يومًا، مقاس ومُثبت ومضمون.\nتدريب عالمي\nمعتمد، يقوده خبراء، عربي/إنجليزي، عملي، ونتائج فعليّة.\nحلول ذكيّة\nذكاء اصطناعي، Gen AI، أتمتة، تحليلات، وذكاء قرارات.\nدعم دائم\nدعم وتشغيل 7/24 مع اتفاقيات مستوى الخدمة (SLAs).\nضمان الأداء\nنتائج ملموسة أو استرجاع الرسوم.\nشراكات موثوقة\nحكومات، جامعات، USAID، GIZ، Mercy Corps، CVDB.\n\nتواجدنا بلا حدود\nالتوسع الإقليمي\nفلسطين\nالعراق\nعُمان\nقطر\nالسعودية\nسوريا\nليبيا\nتركيا",
+    "metadata": {
+      "source_file": "about_ar.txt",
+      "category": "about",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/about-us",
+      "chunk_index": 1,
+      "char_count": 588
+    }
+  },
+  {
+    "id": "contact_chunk_0",
+    "text": "Contact Us\n\nContact Us\nYour success starts here. Are you ready to lead your industry?\ndigix-ai.com\nWebSite\ninfo@digixai.com\nEmail\nName\nCompany\nEmail\nPhone Number\nRequested Service Type\nSend\nJordan, Amman, Makkah Street",
+    "metadata": {
+      "source_file": "contact.txt",
+      "category": "contact",
+      "language": "en",
+      "url": "https://digix-ai.com/contact",
+      "chunk_index": 0,
+      "char_count": 218
+    }
+  },
+  {
+    "id": "contact_ar_chunk_0",
+    "text": "تواصل معنا\n\nاتصل بنا\nنجاحك يبدأ من هنا. هل أنت مستعد لقيادة قطاعك؟\ndigix-ai.com\nالموقع\ninfo@digixai.com\nالبريد الإلكتروني\nالاسم\nالشركة\nالبريد الإلكتروني\nرقم الهاتف\nنوع الخدمة المطلوبة\nإرسال\nالأردن, عمان, شارع مكة",
+    "metadata": {
+      "source_file": "contact_ar.txt",
+      "category": "contact",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/contact",
+      "chunk_index": 0,
+      "char_count": 212
+    }
+  },
+  {
+    "id": "home_chunk_0",
+    "text": "Welcome to Digix AI\nTransforming Intelligence\nInto Alto ROI\nEmpowering individuals and institutions with cutting-edge AI technologies, shaping the digital leaders of the MENA region.\nTransform now\n\nThe Secret Behind Our Excellence\nWhy Choose Digix AI?\nNational Leadership\nDigix AI is the first and only company in the Hashemite Kingdom of Jordan specializing in integrated AI solutions and globally accredited training programs.\nStrategic Partnership\nWe serve as the specialized AI and training arm of 'Dinarak', a pioneer in financial technology (FinTech), officially licensed by the Central Bank of Jordan.",
+    "metadata": {
+      "source_file": "home.txt",
+      "category": "home",
+      "language": "en",
+      "url": "https://digix-ai.com/",
+      "chunk_index": 0,
+      "char_count": 608
+    }
+  },
+  {
+    "id": "home_chunk_1",
+    "text": "Strategic Partners\nGlobal Trust\nInternational\nUSAID\nMercy Corps\nGIZ\nMIT\nStanford\nBDC\nDot Jo\nGovernment\nMinistry of Planning\nMinistry of Youth\nCrown Prince Foundation\nMinistry of Digital Communications and Entrepreneurship\nBank of Urban and Rural Development\nNational Aid Fund\nSuccess\nAHU\nAl-Hussein Bin Talal University\nPSU\nPrincess Sumaya University for Technology\nAAU\nAmman Arab University\nBAU\nAl-Balqa Applied University\nJUST\nJordan University of Science and Technology\nUOP\nThe University of Petra\nTTU\nTafila Technical University",
+    "metadata": {
+      "source_file": "home.txt",
+      "category": "home",
+      "language": "en",
+      "url": "https://digix-ai.com/",
+      "chunk_index": 1,
+      "char_count": 532
+    }
+  },
+  {
+    "id": "home_chunk_2",
+    "text": "Why DGIXIAI Stands Out? Where Global Intelligence Meets Local Results\nGlobal Partnerships\nPartners with Stanford, MIT, and over 50+ global organizations. Trusted by global institutions. Proven Results\nAchieve KPIs within 90 days, with measurable outcomes and satisfied clients. Worldwide Training\nWe offer training in Arabic/English - Practical - Real-world case studies - Interactive. Smart Solutions\nAI-powered solutions - Data-driven decisions - Predictive analytics - Smart recommendations. Reliable Support\nSupport and troubleshooting 24/7 with service level agreements (SLAs). Continuous Support\nOngoing support and updates with SLAs to ensure seamless operations.",
+    "metadata": {
+      "source_file": "home.txt",
+      "category": "home",
+      "language": "en",
+      "url": "https://digix-ai.com/",
+      "chunk_index": 2,
+      "char_count": 670
+    }
+  },
+  {
+    "id": "home_chunk_3",
+    "text": "Trusted Clients\nGovernments - Universities - USAID - GIZ - Mercy Corps - CVDB\nChoose Your Path to Success\nTwo paths, one destination\nPath 1\nAI Solutions for Organizations\nWe design and build innovative AI systems tailored precisely to your operational needs. Custom-built\nLinked to KPIs\nGlobal quality with local execution\nPath 2\nGlobally Accredited Training\nPractical, bilingual (Arabic/English) training with international certifications.",
+    "metadata": {
+      "source_file": "home.txt",
+      "category": "home",
+      "language": "en",
+      "url": "https://digix-ai.com/",
+      "chunk_index": 3,
+      "char_count": 440
+    }
+  },
+  {
+    "id": "home_chunk_4",
+    "text": "World-class trainers and experts\nFlexible formats: in-person, online, hybrid\nReal results measurable within 90 days\nOur Services\nImpact & Results\nImpact & Achievements\nTrained over 5,000 individual learners\nServed 129 companies and institutions\nCollaborated with 55 government entities\nImproved municipal efficiency by 25%\nIncreased government service speed by 30% and reduced costs by 40%\nEnhanced cybersecurity efficiency in the banking sector by 25%\nImpact & Achievements",
+    "metadata": {
+      "source_file": "home.txt",
+      "category": "home",
+      "language": "en",
+      "url": "https://digix-ai.com/",
+      "chunk_index": 4,
+      "char_count": 474
+    }
+  },
+  {
+    "id": "home_chunk_5",
+    "text": "Consulting Services\nFrom Vision to Reality\nGenAI Labs\nCurriculum & Framework Development\nFrom Strategy to Execution\nROI Tracking in 90/60/30 Days\nWe don’t just give advice… We execute.\n\nAcross Dimensions\nWhat Will You Get After 90 Days?\nOperational\n25%-40% Efficiency Gain\nFaster Decisions\nCost Reduction\nFinancial\nROI from Day One\nCost Savings\nRevenue Growth\nStrategic\nReal AI Integration\nData-Driven Decisions\nInnovation at Core\nWorkforce\nFuture-Ready Teams\nGlobal Certifications\nPractical Real Skills\nGuaranteed Success or Full Refund",
+    "metadata": {
+      "source_file": "home.txt",
+      "category": "home",
+      "language": "en",
+      "url": "https://digix-ai.com/",
+      "chunk_index": 5,
+      "char_count": 537
+    }
+  },
+  {
+    "id": "home_ar_chunk_0",
+    "text": "أهلاً بك في Digix AI\nنحوّل الذكاء إلى عائد استثماري\nمستدام وذكي Alto ROI\nنبني قادة عصر المستقبل الرقمي من خلال تمكين الأفراد والمؤسسات بأحدث تقنيات الذكاء الاصطناعي. مركز الذكاء الاصطناعي والتدريب الأبرز في منطقة MENA لصناعة التأثير والنمو الحقيقي.\nابدأ رحلة التحول الآن\n\nسر تفوقنا\nلماذا تختار Digix AI؟\nالريادة الوطنية\nتنفرد 'DGIXIAI' بكونها الشركة الأولى والوحيدة في المملكة الأردنية الهاشمية، التي تتخصص في الحلول المتكاملة للذكاء الاصطناعي والبرامج التدريبية المعتمدة عالمياً.\nالشراكة الاستراتيجية\nنُعدّ الذراع الاستراتيجي المُتخصص في الذكاء الاصطناعي والتدريب لشركة \"دينارك\" (Dinarak)، الرائدة في مجال التكنولوجيا المالية (FinTech) والمرخصة رسمياً من البنك المركزي الأردني.",
+    "metadata": {
+      "source_file": "home_ar.txt",
+      "category": "home",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar",
+      "chunk_index": 0,
+      "char_count": 678
+    }
+  },
+  {
+    "id": "home_ar_chunk_1",
+    "text": "شراكات استراتيجية\nثقة عالمية\nشراكات دوليون\nUSAID\nMercy Corps\nGIZ\nMIT\nStanford\nBDC\nDot Jo\nشراكات حكومية\nوزارة التخطيط\nوزارة الشباب\nمؤسسة ولي العهد\nوزارة الاتصال الرقمي والريادة\nبنك تنمية المدن والقرى\nصندوق المعونة الوطنية\nشراكات النجاح\nAHU\nجامعة الحسين بن طلال\nPSU\nجامعة الأميرة سمية للتكنولوجيا\nAAU\nجامعة عمان العربية\nBAU\nجامعة البلقاء التطبيقية\nJUST\nجامعة العلوم والتكنولوجيا الأردنية\nUOP\nجامعة البتراء\nTTU\nجامعة الطفيلة التقنية",
+    "metadata": {
+      "source_file": "home_ar.txt",
+      "category": "home",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar",
+      "chunk_index": 1,
+      "char_count": 429
+    }
+  },
+  {
+    "id": "home_ar_chunk_2",
+    "text": "لماذا DGIXIAI تتفوق؟\nعندما يلتقي الذكاء العالمي بالنتائج المحلية\nمصداقيّة عالميّة\nإرث MIT وStanford وخبرات مع أكثر من 50 شركة عالميّة، وفرق تسليم عالميّة. نتائج مُثبتة\nأثر KPI خلال 90 يومًا، مقاس ومُثبت ومضمون. تدريب عالمي\nمعتمد، يقوده خبراء، عربي/إنجليزي، عملي، ونتائج فعليّة. حلول ذكيّة\nذكاء اصطناعي، Gen AI، أتمتة، تحليلات، وذكاء قرارات. دعم دائم\nدعم وتشغيل 7/24 مع اتفاقيات مستوى الخدمة (SLAs). ضمان الأداء\nنتائج ملموسة أو استرجاع الرسوم. شراكات موثوقة\nحكومات، جامعات، USAID، GIZ، Mercy Corps، CVDB. اختر مسار نجاحك\nمساران، وجهة واحدة\nالمسار 1\nحلول ذكاء اصطناعي للمؤسسات\nنبني ونصمم أنظمة ذكاء اصطناعي مبتكرة لتلبية احتياجات مؤسستكم التشغيلية بدقة عالية. مبنية خصيصًا لك\nمرتبطة بالـ KPIs\nجودة عالمية بتنفيذ محلي\nالمسار 2\nتدريب عالمي معتمد\nتدريب عملي تطبيقي ثنائي اللغة (عربي/إنجليزي) بشهادات دولية.",
+    "metadata": {
+      "source_file": "home_ar.txt",
+      "category": "home",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar",
+      "chunk_index": 2,
+      "char_count": 801
+    }
+  },
+  {
+    "id": "home_ar_chunk_3",
+    "text": "مدربون وخبراء عالميون\nأنماط تدريب مرنة: وجاهي، أونلاين، مدمج\nنتائج حقيقية تُقاس خلال 90 يوماً\nخدماتنا\nالأثر والنتائج\nأرقام وإنجازات\nتدريب أكثر من 5000 متدرب فردي\nخدمة 129 شركة ومؤسسة\nالتعاون مع 55 جهة حكومية\nرفع كفاءة البلديات بنسبة 25%\nزيادة سرعة الخدمات الحكومية بنسبة 30% وخفض التكاليف بنسبة 40%\nتعزيز كفاءة الأمن السيبراني في القطاع المصرفي بنسبة 25%\nأرقام وإنجازات",
+    "metadata": {
+      "source_file": "home_ar.txt",
+      "category": "home",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar",
+      "chunk_index": 3,
+      "char_count": 369
+    }
+  },
+  {
+    "id": "home_ar_chunk_4",
+    "text": "خدمات الاستشارات\nمن الرؤية إلى الواقع\nمختبرات GenAI\nتحديث وتطوير المناهج\nمن الإستراتيجية إلى التنفيذ\nتتبع ROI خلال 90/60/30 يوماً\nنحن لا نقدّم نصائح فقط... نحن ننفّذ\n\nعلى المستويات\nعلى ماذا ستحصل بعد 90 يوماً؟\nتشغيلياً\nكفاءة 40%-25%\nقرارات أسرع\nخفض التكلفة\nمالي\nROI من اليوم الأول\nتوفير تكاليف\nزيادة إيرادات\nاستراتيجي\nدمج فعلي للذكاء الاصطناعي\nقرارات قائمة على البيانات\nابتكار في صميم العمل\nقوى عاملة\nفرق جاهزة للمستقبل\nشهادات عالمية\nمهارات عملية حقيقية\nنجاح مضمون أو استرجاع الرسوم",
+    "metadata": {
+      "source_file": "home_ar.txt",
+      "category": "home",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar",
+      "chunk_index": 4,
+      "char_count": 482
+    }
+  },
+  {
+    "id": "impact_chunk_0",
+    "text": "Impact & Achievements\n\nPioneers of Progress\nNumber of Trainees\nCompanies & Institutions\nIndividual Trainees\nGovernment Entities\n\nImpact Backed by Numbers\nNumbers Speak the Language of Achievement\nGovernment Sector\nService Speed Increase\nCost Reduction\nMunicipalities\nEfficiency Improvement\nBanking Sector\nCybersecurity Efficiency",
+    "metadata": {
+      "source_file": "impact.txt",
+      "category": "impact",
+      "language": "en",
+      "url": "https://digix-ai.com/impact",
+      "chunk_index": 0,
+      "char_count": 329
+    }
+  },
+  {
+    "id": "impact_chunk_1",
+    "text": "Strategic Partners\nGlobal Trust\nInternational\nUSAID\nMercy Corps\nGIZ\nMIT\nStanford\nBDC\nDot Jo\nGovernment\nMinistry of Planning\nMinistry of Youth\nCrown Prince Foundation\nMinistry of Digital Communications and Entrepreneurship\nBank of Urban and Rural Development\nNational Aid Fund\nSuccess\nAHU\nAl-Hussein Bin Talal University\nPSU\nPrincess Sumaya University for Technology\nAAU\nAmman Arab University\nBAU\nAl-Balqa Applied University\nJUST\nJordan University of Science and Technology\nUOP\nThe University of Petra\nTTU\nTafila Technical University",
+    "metadata": {
+      "source_file": "impact.txt",
+      "category": "impact",
+      "language": "en",
+      "url": "https://digix-ai.com/impact",
+      "chunk_index": 1,
+      "char_count": 532
+    }
+  },
+  {
+    "id": "impact_ar_chunk_0",
+    "text": "أرقام وإنجازات\n\nرواد التقــــــدم\nعدد المتدربين\nشركة ومؤسسة\nمتدرب (أفراد)\nجهة حكومية\n\nأثر مثبت بالأرقام\nالأرقام تتحدث بلغة الإنجاز\nالقطاع الحكومي\nزيادة سرعة الخدمات\nخفض التكلفة\nالبلديات\nرفع الكفاءة\nالقطاع المصرفي\nكفاءة أمن سيبراني\n\nشراكات استراتيجية\nثقة عالمية\nشراكات دوليون\nUSAID\nMercy Corps\nGIZ\nMIT\nStanford\nBDC\nDot Jo\nشراكات حكومية\nوزارة التخطيط\nوزارة الشباب\nمؤسسة ولي العهد\nوزارة الاتصال الرقمي والريادة\nبنك تنمية المدن والقرى\nصندوق المعونة الوطنية\nشراكات النجاح\nAHU\nجامعة الحسين بن طلال\nPSU\nجامعة الأميرة سمية للتكنولوجيا\nAAU\nجامعة عمان العربية\nBAU\nجامعة البلقاء التطبيقية\nJUST\nجامعة العلوم والتكنولوجيا الأردنية\nUOP\nجامعة البتراء\nTTU\nجامعة الطفيلة التقنية",
+    "metadata": {
+      "source_file": "impact_ar.txt",
+      "category": "impact",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/impact",
+      "chunk_index": 0,
+      "char_count": 661
+    }
+  },
+  {
+    "id": "services_chunk_0",
+    "text": "Our Services\n\nPath One\nAI Solutions for Organizations",
+    "metadata": {
+      "source_file": "services.txt",
+      "category": "services",
+      "language": "en",
+      "url": "https://digix-ai.com/services",
+      "chunk_index": 0,
+      "char_count": 53
+    }
+  },
+  {
+    "id": "services_chunk_1",
+    "text": "Artificial Intelligence Solutions\nCustom AI solutions built for your organization. We design and develop innovative AI systems meticulously crafted to meet your operational and functional requirements. Solution Features:\nBuilt for you\nAligned with KPIs\nGlobal quality with local execution\nAdvanced Solutions Menu:\nAI-Powered Automation\nFull Automation\nIntelligent automation of operational processes to save time and cost. Intelligent Decision-Making\nSmart Decisions\nData-driven decision support with precise predictive analytics. AI-Driven Analytics\nAdvanced Analytics\nExtract deep insights from your data using AI. AI as an Employee\nAI Employees\nDigital teams working 24/7 powered by artificial intelligence. Who We Serve? Businesses\nAI solutions to boost efficiency and reduce costs.",
+    "metadata": {
+      "source_file": "services.txt",
+      "category": "services",
+      "language": "en",
+      "url": "https://digix-ai.com/services",
+      "chunk_index": 1,
+      "char_count": 786
+    }
+  },
+  {
+    "id": "services_chunk_2",
+    "text": "Universities\nUpdated curricula and hands-on training on the latest technologies. Government Entities\nEmpowering public services with smart analytics and precise decision-making.",
+    "metadata": {
+      "source_file": "services.txt",
+      "category": "services",
+      "language": "en",
+      "url": "https://digix-ai.com/services",
+      "chunk_index": 2,
+      "char_count": 177
+    }
+  },
+  {
+    "id": "services_chunk_3",
+    "text": "Path Two\nGlobally Accredited Training\n\nGlobal Training\nPractical, bilingual (Arabic/English) training with international certifications.\nTraining Features:\nWorld-class trainers and experts\nFlexible formats: in-person, online, hybrid.\nReal results measurable within 90 days.\n\nConsulting Services\nFrom Vision to Reality\nGenAI Labs\nCurriculum & Framework Development\nFrom Strategy to Execution\nROI Tracking in 90/60/30 Days\nWe don’t just give advice… We execute.",
+    "metadata": {
+      "source_file": "services.txt",
+      "category": "services",
+      "language": "en",
+      "url": "https://digix-ai.com/services",
+      "chunk_index": 3,
+      "char_count": 459
+    }
+  },
+  {
+    "id": "services_chunk_4",
+    "text": "Across Dimensions\nWhat Will You Get After 90 Days?\nOperational\n25%-40% Efficiency Gain\nFaster Decisions\nCost Reduction\nFinancial\nROI from Day One\nCost Savings\nRevenue Growth\nStrategic\nReal AI Integration\nData-Driven Decisions\nInnovation at Core\nWorkforce\nFuture-Ready Teams\nGlobal Certifications\nPractical Real Skills\nGuaranteed Success or Full Refund",
+    "metadata": {
+      "source_file": "services.txt",
+      "category": "services",
+      "language": "en",
+      "url": "https://digix-ai.com/services",
+      "chunk_index": 4,
+      "char_count": 351
+    }
+  },
+  {
+    "id": "services_ar_chunk_0",
+    "text": "خدماتنا\n\nالمسار الأول\nحلول ذكاء اصطناعي للمؤسسات\n\nحلول الذكاء الاصطناعي\nحلول ذكاء اصطناعي مخصصة لمؤسستكم.\nنتولى بناء وتصميم أنظمة وحلول الذكاء الاصطناعي المبتكرة، والمصاغة بدقة فائقة لتلبية متطلباتكم التشغيلية والوظيفية.\nمميزات الحلول:\nمبنية لك\nمرتبطة بالـ KPIs\nجودة عالمية بتنفيذ محلي\nقائمة الحلول المتقدمة:\nأتمتة ذكاء اصطناعي\nأتمتة كاملة\nأتمتة ذكية للعمليات التشغيلية لتوفير الوقت والتكلفة.\nذكاء اتخاذ القرار\nقرارات ذكية\nدعم اتخاذ القرار بتحليلات تنبؤية دقيقة.\nتحليلات مدعومة بالذكاء الاصطناعي\nتحليلات متقدمة\nاستخراج رؤى عميقة من بياناتك بذكاء.\nالذكاء الاصطناعي كموظف\nموظّفون  AI\nفريق رقمي يعمل 24/7 بذكاء اصطناعي.\nمن نخدم؟\nالشركات\nحلول ذكاء اصطناعي لرفع الكفاءة وخفض التكاليف.\nالجامعات\nمناهج محدثة وتدريب عملي على أحدث التقنيات.\nالجهات الحكومية\nتمكين الخدمات العامة بتحليلات ذكية وقرارات دقيقة.",
+    "metadata": {
+      "source_file": "services_ar.txt",
+      "category": "services",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/services",
+      "chunk_index": 0,
+      "char_count": 797
+    }
+  },
+  {
+    "id": "services_ar_chunk_1",
+    "text": "المسار الثاني\nتدريب عالمي معتمد\n\nتدريب عالمي\nتدريب عملي تطبيقي (عربي/إنجليزي) بشهادات دولية.\nمميزات الحلول:\nمدربون وخبراء عالميون\nأنماط تدريب مرنة: وجاهي، أونلاين، مدمج.\nنتائج حقيقية تُقاس خلال 90 يوماً.\n\nخدمات الاستشارات\nمن الرؤية إلى الواقع\nمختبرات GenAI\nتحديث وتطوير المناهج\nمن الإستراتيجية إلى التنفيذ\nتتبع ROI خلال 90/60/30 يوماً\nنحن لا نقدّم نصائح فقط... نحن ننفّذ\n\nعلى المستويات\nعلى ماذا ستحصل بعد 90 يوماً؟\nتشغيلياً\nكفاءة 40%-25%\nقرارات أسرع\nخفض التكلفة\nمالي\nROI من اليوم الأول\nتوفير تكاليف\nزيادة إيرادات\nاستراتيجي\nدمج فعلي للذكاء الاصطناعي\nقرارات قائمة على البيانات\nابتكار في صميم العمل\nقوى عاملة\nفرق جاهزة للمستقبل\nشهادات عالمية\nمهارات عملية حقيقية\nنجاح مضمون أو استرجاع الرسوم",
+    "metadata": {
+      "source_file": "services_ar.txt",
+      "category": "services",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/services",
+      "chunk_index": 1,
+      "char_count": 687
+    }
+  },
+  {
+    "id": "training_chunk_0",
+    "text": "Training Programs\n\nFintech\nFintech\nDigital Payments\nFintech & Digital Payments\nSpecialization\n\nArtificial Intelligence\nCertification\nArtificial Intelligence\nInternational AI License (IAIDL)\nCertification\nBeginner\nAI Skills\nAI Literacy & Fundamentals\nWorkshop\nHuman Resources\nKPIs\nAI in Employee Performance & Organizational KPIs\nSpecialization\nAI Skills\nCareer\nAI in Job Functions\nCourse Bundle\n\nBlockchain\nCryptocurrency\nBlockchain\nCryptocurrency Courses\nCourse Bundle\nBlockchain\nCryptocurrency\nBlockchain Courses\nCourse Bundle",
+    "metadata": {
+      "source_file": "training.txt",
+      "category": "training",
+      "language": "en",
+      "url": "https://digix-ai.com/training-programs",
+      "chunk_index": 0,
+      "char_count": 528
+    }
+  },
+  {
+    "id": "training_chunk_1",
+    "text": "Cybersecurity\nCybersecurity\nCertification\nCybersecurity Courses\nCourse Bundle\nCISSP\nCertification\nCISSP - Certified Information Systems Security Professional\nCertification\nCISM\nCertification\nCISM - Certified Information Security Manager\nCertification\nCCSP\nCCSP - Certified Cloud Security Professional\nCertification\n\nProject Management\nProject Management\nAgile\nProject Management\nCourse Bundle\nAgile\nCertification\nACP - Agile Certified Practitioner\nCertification\nScrum\nAgile\nScrum Master\nCertification\nProduct Management\nAgile\nProduct Owner\nCertification",
+    "metadata": {
+      "source_file": "training.txt",
+      "category": "training",
+      "language": "en",
+      "url": "https://digix-ai.com/training-programs",
+      "chunk_index": 1,
+      "char_count": 553
+    }
+  },
+  {
+    "id": "training_chunk_2",
+    "text": "Governance, Risk & Compliance (GRC)\nGovernance, Risk & Compliance\nCompliance\nGovernance, Risk & Compliance (GRC)\nCourse Bundle\nRisk Management\nCRISC - Certified in Risk and Information Systems Control\nCertification\nCOBIT\nCOBIT 2019 Framework\nSpecialization\nISO 27001\nISO 27001 Implementation Leader\nCertification\n\nSpecialized Courses\nSpecialized\nAdvanced\nSpecialized Courses\nCourse Bundle\nFintech\nDigital Payments\nFintech & Digital Payments\nCourse\nArtificial Intelligence\nFintech\nAI in Fintech\nCourse\nArtificial Intelligence\nCybersecurity\nAI in Cybersecurity\nCourse",
+    "metadata": {
+      "source_file": "training.txt",
+      "category": "training",
+      "language": "en",
+      "url": "https://digix-ai.com/training-programs",
+      "chunk_index": 2,
+      "char_count": 565
+    }
+  },
+  {
+    "id": "training_chunk_3",
+    "text": "Other Courses\nMiscellaneous\nEmerging Technologies\nOther Courses\nCourse Bundle\nArtificial Intelligence\nAdvanced\nAdvanced AI for Technical & Non-Technical\nSpecialization\nFintech\nAdvanced\nAdvanced Fintech Courses\nSpecialization\nSoft Skills\nLeadership\nSoft Skills\nWorkshop",
+    "metadata": {
+      "source_file": "training.txt",
+      "category": "training",
+      "language": "en",
+      "url": "https://digix-ai.com/training-programs",
+      "chunk_index": 3,
+      "char_count": 268
+    }
+  },
+  {
+    "id": "training_ar_chunk_0",
+    "text": "English\nالبرامج التدريبية\n\nالتكنولوجيا المالية\nالتكنولوجيا المالية\nالدفع الرقمي\nالتكنولوجيا المالية (Fintech) والدفع الرقمي\nتخصص\n\nالذكاء الاصطناعي\nشهادة معتمدة\nالذكاء الاصطناعي\nالرخصة الدولية في الذكاء الاصطناعي (IAIDL)\nشهادة معتمدة\nمبتدئ\nمهارات الذكاء الاصطناعي\nمحو الأمية وأساسيات الذكاء الاصطناعي\nورشة عمل\nالموارد البشرية\nمؤشرات الأداء\nالذكاء الاصطناعي في أداء الموظفين ومؤشرات الأداء التنظيمية\nتخصص\nمهارات الذكاء الاصطناعي\nالوظائف والمسار المهني\nالذكاء الاصطناعي في الوظائف\nحزمة دورات\nعرض المزيد\n\nالبلوكتشين\nالعملات الرقمية\nالبلوكتشين\nدورات العملات الرقمية\nحزمة دورات\nالبلوكتشين\nالعملات الرقمية\nدورات البلوكتشين (Blockchain)\nحزمة دورات",
+    "metadata": {
+      "source_file": "training_ar.txt",
+      "category": "training",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/training-programs",
+      "chunk_index": 0,
+      "char_count": 639
+    }
+  },
+  {
+    "id": "training_ar_chunk_1",
+    "text": "الأمن السيبراني\nالأمن السيبراني\nشهادة معتمدة\nدورات الأمن السيبراني\nحزمة دورات\nCISSP\nشهادة معتمدة\nمحترف معتمد في أمن نظم المعلومات - CISSP\nشهادة معتمدة\nCISM\nشهادة معتمدة\nمدير معتمد لأمن المعلومات - CISM\nشهادة معتمدة\nCCSP\nمحترف معتمد في أمن الحوسبة السحابية - CCSP\nشهادة معتمدة\nعرض المزيد\n\nإدارة المشاريع\nإدارة المشاريع\nأجايل\nإدارة المشاريع\nحزمة دورات\nأجايل\nشهادة معتمدة\nممارس معتمد في المنهجيات الرشيقة (أجايل) - ACP\nشهادة معتمدة\nسكرم\nأجايل\nقائد سكرم / مدير فريق سكرم - Scrum Master\nشهادة معتمدة\nإدارة المنتج\nأجايل\nمالك المنتج - Product Owner\nشهادة معتمدة\nعرض المزيد",
+    "metadata": {
+      "source_file": "training_ar.txt",
+      "category": "training",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/training-programs",
+      "chunk_index": 1,
+      "char_count": 565
+    }
+  },
+  {
+    "id": "training_ar_chunk_2",
+    "text": "الحوكمة والمخاطر والامتثال\nالحوكمة والمخاطر والامتثال\nالامتثال\nالحوكمة، المخاطر، والامتثال\nحزمة دورات\nالإدارة المخاطر\nمحترف معتمد في المخاطر وضوابط نظم المعلومات - CRISC\nشهادة معتمدة\nCOBIT\nإطار حوكمة وإدارة تقنية المعلومات - COBIT 2019\nتخصص\nISO 27001\nقائد تطبيق نظام إدارة أمن المعلومات ISO 27001\nشهادة معتمدة\nعرض المزيد\n\nالدورات المتخصصة\nمتخصص\nمتقدم\nالدورات المتخصصة\nحزمة دورات\nالتكنولوجيا المالية\nالدفع الرقمي\nالتكنولوجيا المالية (Fintech) والدفع الرقمي\nدورة تدريبية\nالذكاء الاصطناعي\nالتكنولوجيا المالية\nالذكاء الاصطناعي في التكنولوجيا المالية\nدورة تدريبية\nالذكاء الاصطناعي\nالأمن السيبراني\nالذكاء الاصطناعي في الأمن السيبراني\nدورة تدريبية\nعرض المزيد",
+    "metadata": {
+      "source_file": "training_ar.txt",
+      "category": "training",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/training-programs",
+      "chunk_index": 2,
+      "char_count": 651
+    }
+  },
+  {
+    "id": "training_ar_chunk_3",
+    "text": "دورات أخرى\nمتنوع\nالتقنيات الناشئة\nالدورات الأخرى\nحزمة دورات\nالذكاء الاصطناعي\nمتقدم\nالذكاء الاصطناعي المتقدم للتقنيين وغير التقنيين\nتخصص\nالتكنولوجيا المالية\nمتقدم\nدورات التكنولوجيا المالية المتقدمة\nتخصص\nالمهارات الشخصية\nالقيادة\nالمهارات الشخصية (Soft Skills)\nورشة عمل\nعرض المزيد",
+    "metadata": {
+      "source_file": "training_ar.txt",
+      "category": "training",
+      "language": "ar",
+      "url": "https://digix-ai.com/ar/training-programs",
+      "chunk_index": 3,
+      "char_count": 277
+    }
+  }
+]
