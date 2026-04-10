@@ -5,7 +5,7 @@ STATIC_PAGES = [
     {"url": "https://digix-ai.com/",
      "category": "home",
      "filename": "home.txt",
-     "language": "en"}},
+     "language": "en"},
 
     {"url": "https://digix-ai.com/about-us",
      "category": "about",
@@ -90,7 +90,7 @@ DYNAMIC_SECTIONS = [
 
     {
         "base_url": "https://digix-ai.com/ar/services",
-        "child_path": "ar/services/",
+        "child_path": "/ar/services/",
         "category": "service_detail",
         "language": "ar"
     },

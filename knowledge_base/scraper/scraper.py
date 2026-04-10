@@ -16,6 +16,7 @@ def fetch_page(url):
     }
     response = requests.get(url, headers=headers, timeout=10)
     response.raise_for_status()  # Raises an error if the request failed
+    response.encoding = response.apparent_encoding
     return response.text
 
 
