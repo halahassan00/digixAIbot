@@ -1,0 +1,121 @@
+2026-04-11 00:23:45 | INFO     | digix.api.chat | session=45e30ae7-9032-4e65-b9d2-c96a958130ef lang=ar msg='شو عندكم دورات'
+2026-04-11 00:25:52 | ERROR    | digix | ERROR | Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}} | path=/chat | method=POST | trace=/digix-AIbot/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2026-04-11 00:25:52 | INFO     | digix.api.chat | session=45e30ae7-9032-4e65-b9d2-c96a958130ef lang=ar msg='شو عندكم دورات'
+2026-04-11 00:25:55 | ERROR    | digix | ERROR | Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}} | path=/chat | method=POST | trace=/digix-AIbot/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2026-04-11 00:25:55 | INFO     | digix.api.voice | tts | lang=ar chars=39
+2026-04-11 00:25:55 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=39
+2026-04-11 00:25:56 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:26:16 | INFO     | digix.api.chat | session=45e30ae7-9032-4e65-b9d2-c96a958130ef lang=ar msg='عطيني معلومات عنكم'
+2026-04-11 00:26:21 | ERROR    | digix | ERROR | Error code: 400 - {'error': {'message': "We could not parse the JSON body of your request. (HINT: This likely means you aren't using your HTTP library correctly. The OpenAI API expects a JSON payload, but what was sent was not valid JSON. If you have trouble figuring out how to fix this, please contact us through our help center at help.openai.com.)", 'type': 'invalid_request_error', 'param': None, 'code': None}} | path=/chat | method=POST | trace=f._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "We could not parse the JSON body of your request. (HINT: This likely means you aren't using your HTTP library correctly. The OpenAI API expects a JSON payload, but what was sent was not valid JSON. If you have trouble figuring out how to fix this, please contact us through our help center at help.openai.com.)", 'type': 'invalid_request_error', 'param': None, 'code': None}}
+
+2026-04-11 00:26:21 | INFO     | digix.api.voice | tts | lang=ar chars=39
+2026-04-11 00:26:21 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=39
+2026-04-11 00:26:22 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:26:50 | INFO     | digix.api.chat | session=45e30ae7-9032-4e65-b9d2-c96a958130ef lang=ar msg='مرحبا'
+2026-04-11 00:26:52 | ERROR    | digix | ERROR | Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}} | path=/chat | method=POST | trace=/digix-AIbot/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2026-04-11 00:26:52 | INFO     | digix.api.voice | tts | lang=ar chars=39
+2026-04-11 00:26:52 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=39
+2026-04-11 00:26:53 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:27:05 | INFO     | digix.api.chat | session=45e30ae7-9032-4e65-b9d2-c96a958130ef lang=ar msg='مرحبا'
+2026-04-11 00:27:08 | ERROR    | digix | ERROR | Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}} | path=/chat | method=POST | trace=/digix-AIbot/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+2026-04-11 00:27:08 | INFO     | digix.api.voice | tts | lang=ar chars=39
+2026-04-11 00:27:08 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=39
+2026-04-11 00:27:09 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:27:27 | INFO     | digix.api.voice | transcribe | file=recording.webm size=25098
+2026-04-11 00:27:27 | INFO     | digix.voice.stt | Loading Whisper model: medium
+2026-04-11 00:51:28 | INFO     | digix.api.chat | session=2ca2d8d5-39d9-4bb0-8bc5-075ad344bdd4 lang=ar msg='about digixai'
+2026-04-11 00:51:49 | INFO     | digix.api.voice | tts | lang=ar chars=673
+2026-04-11 00:51:49 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=673
+2026-04-11 00:51:50 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:52:15 | INFO     | digix.api.chat | session=2ca2d8d5-39d9-4bb0-8bc5-075ad344bdd4 lang=ar msg='احكيلي عن الدورات الموجودة'
+2026-04-11 00:52:20 | INFO     | digix.api.voice | tts | lang=ar chars=658
+2026-04-11 00:52:20 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=658
+2026-04-11 00:52:20 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:52:52 | INFO     | digix.api.chat | session=2ca2d8d5-39d9-4bb0-8bc5-075ad344bdd4 lang=ar msg='معلومات اكتر عن تدريب الfintech'
+2026-04-11 00:52:54 | INFO     | digix.api.voice | tts | lang=ar chars=464
+2026-04-11 00:52:54 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=464
+2026-04-11 00:52:55 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:54:32 | INFO     | digix.api.chat | session=2ca2d8d5-39d9-4bb0-8bc5-075ad344bdd4 lang=ar msg='How can i contact you'
+2026-04-11 00:54:34 | INFO     | digix.api.voice | tts | lang=ar chars=340
+2026-04-11 00:54:34 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=340
+2026-04-11 00:54:35 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
+2026-04-11 00:54:59 | INFO     | digix.api.chat | session=2ca2d8d5-39d9-4bb0-8bc5-075ad344bdd4 lang=ar msg='what color is a carrot'
+2026-04-11 00:55:02 | INFO     | digix.api.voice | tts | lang=ar chars=108
+2026-04-11 00:55:02 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=108
+2026-04-11 00:55:03 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes. | path=/tts | method=POST | trace=outes/voice.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
+
