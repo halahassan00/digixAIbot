@@ -39,7 +39,7 @@ digix-chatbot/
 │   │   └── chroma_data/               # Persisted ChromaDB index lives here
 │   │
 │   ├── llm/
-│   │   └── client.py                  # Groq client setup — swap to OpenAI here if needed
+│   │   └── client.py                  # OpenAI client setup
 │   │
 │   ├── voice/
 │   │   ├── stt.py                     # Whisper speech-to-text logic
