@@ -1,42 +1,41 @@
 /**
  * src/styles/themes.css
  *
- * DIGIX AI brand colors and design tokens.
- * Update hex values here when the final brand guide is received.
- *
+ * DIGIX AI brand colors — purple-to-blue gradient identity.
  * All other CSS files import variables from here via @import.
  */
 
 :root {
-  /* Primary brand colors — update with final brand guide */
-  --color-primary:        #1a3c6e;   /* deep navy blue  */
-  --color-primary-light:  #2a5298;   /* medium blue      */
-  --color-primary-dark:   #0f2345;   /* dark navy        */
-  --color-accent:         #00b4d8;   /* cyan accent      */
+  /* Brand gradient */
+  --gradient-brand: linear-gradient(to right, #b133ff, #6196ff);
 
-  /* Surface colors */
-  --color-bg:             #ffffff;
-  --color-surface:        #f5f7fa;
-  --color-border:         #e2e8f0;
+  /* Solid brand colors */
+  --color-primary:       #6196ff;
+  --color-primary-light: #b133ff;
+  --color-primary-dark:  #4a78e8;
+
+  /* Surfaces */
+  --color-bg:      #ffffff;
+  --color-surface: #f4f4f8;
+  --color-border:  #e3e3e3;
 
   /* Text */
-  --color-text-primary:   #1a202c;
-  --color-text-secondary: #718096;
+  --color-text-primary:   #000000;
+  --color-text-secondary: #555555;
   --color-text-inverse:   #ffffff;
 
   /* Message bubbles */
-  --color-bubble-user:    var(--color-primary);
-  --color-bubble-bot:     #edf2f7;
-  --color-bubble-user-text: var(--color-text-inverse);
-  --color-bubble-bot-text:  var(--color-text-primary);
+  --color-bubble-user:      #6196ff;   /* overridden to gradient in widget.css */
+  --color-bubble-bot:       #f0f0f6;
+  --color-bubble-bot-text:  #000000;
 
   /* Status */
   --color-error:   #e53e3e;
   --color-success: #38a169;
 
   /* Sizing */
-  --widget-width:  380px;
-  --widget-height: 560px;
-  --border-radius: 16px;
+  --widget-width:     320px;
+  --widget-height:    480px;
+  --border-radius:    16px;
   --border-radius-sm: 8px;
 }

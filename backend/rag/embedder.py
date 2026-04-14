@@ -26,7 +26,7 @@ from sentence_transformers import SentenceTransformer
 # Constants
 # ---------------------------------------------------------------------------
 
-MODEL_NAME     = "intfloat/multilingual-e5-large"
+MODEL_NAME     = "intfloat/multilingual-e5-base"
 QUERY_PREFIX   = "query: "
 PASSAGE_PREFIX = "passage: "
 BATCH_SIZE     = 32   # chunks per encode call — reduce if GPU OOM
