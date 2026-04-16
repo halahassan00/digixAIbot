@@ -119,3 +119,88 @@ RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade
     )
 RuntimeError: Azure TTS canceled: CancellationReason.Error — WebSocket upgrade failed: Authentication error (401). Please check subscription information and region name. USP state: Sending. Received audio size: 0 bytes.
 
+2026-04-14 05:46:59 | INFO     | digix.api.voice | transcribe | file=recording.webm size=35724
+2026-04-14 05:47:01 | INFO     | digix.api.chat | session=39c8825b-0a1c-4c7f-b078-4afd5b7e57c9 lang=ar msg='Assalamu alaikum'
+2026-04-14 05:47:15 | INFO     | digix.api.voice | tts | lang=ar chars=93
+2026-04-14 05:47:15 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=93
+2026-04-14 05:47:16 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes. | path=/tts | method=POST | trace=ce.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes.
+
+2026-04-14 05:47:20 | INFO     | digix.api.voice | transcribe | file=recording.webm size=110
+2026-04-14 05:47:22 | ERROR    | digix | ERROR | Error code: 400 - {'error': {'message': 'The audio file could not be decoded or its format is not supported.', 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}} | path=/transcribe | method=POST | trace=      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hala_/digix-AIbot/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'The audio file could not be decoded or its format is not supported.', 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}
+
+2026-04-14 05:47:27 | INFO     | digix.api.voice | transcribe | file=recording.webm size=60840
+2026-04-14 05:47:28 | INFO     | digix.api.chat | session=39c8825b-0a1c-4c7f-b078-4afd5b7e57c9 lang=ar msg='مرحبا، ممكن تحكيلي عن دجكس اي اي؟'
+2026-04-14 05:47:31 | INFO     | digix.api.voice | tts | lang=ar chars=451
+2026-04-14 05:47:31 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=451
+2026-04-14 05:47:32 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes. | path=/tts | method=POST | trace=ce.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes.
+
+2026-04-14 05:47:49 | INFO     | digix.api.voice | transcribe | file=recording.webm size=55044
+2026-04-14 05:47:50 | INFO     | digix.api.chat | session=39c8825b-0a1c-4c7f-b078-4afd5b7e57c9 lang=ar msg='ممكن تحكي لي شو طعمة البصل'
+2026-04-14 05:47:52 | INFO     | digix.api.voice | tts | lang=ar chars=115
+2026-04-14 05:47:52 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=115
+2026-04-14 05:47:52 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes. | path=/tts | method=POST | trace=ce.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes.
+
+2026-04-14 05:48:22 | INFO     | digix.api.voice | transcribe | file=recording.webm size=114936
+2026-04-14 05:48:23 | INFO     | digix.api.chat | session=39c8825b-0a1c-4c7f-b078-4afd5b7e57c9 lang=ar msg='ممكن تحكيلي عن شو الدورات اللي ممكن اسجل فيها حالياً وتحطلي اياهم في bullet poin'
+2026-04-14 05:48:27 | INFO     | digix.api.voice | tts | lang=ar chars=851
+2026-04-14 05:48:27 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=851
+2026-04-14 05:48:28 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes. | path=/tts | method=POST | trace=ce.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes.
+
+2026-04-14 05:51:40 | INFO     | digix.api.voice | transcribe | file=recording.webm size=125562
+2026-04-14 05:51:42 | INFO     | digix.api.chat | session=39c8825b-0a1c-4c7f-b078-4afd5b7e57c9 lang=ar msg='هل بتقدر ترد علي بالعامي زي بالأردني ولا بس بتقدر ترد بالعرب الفصحى'
+2026-04-14 05:51:44 | INFO     | digix.api.voice | tts | lang=ar chars=90
+2026-04-14 05:51:44 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=90
+2026-04-14 05:51:45 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes. | path=/tts | method=POST | trace=ce.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes.
+
+2026-04-14 06:09:16 | INFO     | digix.api.voice | transcribe | file=recording.webm size=13506
+2026-04-14 06:09:19 | INFO     | digix.api.chat | session=30551fb2-b5bb-4ddc-9572-5fa63bf28f44 lang=ar msg='Hi.'
+2026-04-14 06:10:16 | INFO     | digix.api.voice | tts | lang=ar chars=80
+2026-04-14 06:10:16 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-ZariyahNeural chars=80
+2026-04-14 06:10:18 | ERROR    | digix | ERROR | Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes. | path=/tts | method=POST | trace=ce.py", line 105, in text_to_speech
+    audio_bytes = synthesize(req.text, req.language)
+  File "/home/hala_/digix-AIbot/backend/voice/tts.py", line 97, in synthesize
+    raise RuntimeError(
+        f"Azure TTS canceled: {details.reason} — {details.error_details}"
+    )
+RuntimeError: Azure TTS canceled: CancellationReason.Error — Connection was closed by the remote host. Error code: 1007. Error details: Unsupported voice ar-JO-ZariyahNeural. USP state: TurnStarted. Received audio size: 0 bytes.
+
+2026-04-14 06:16:33 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-SanaNeural chars=27
+2026-04-14 06:16:34 | INFO     | digix.voice.tts | TTS success | 64512 bytes
+2026-04-14 06:23:48 | INFO     | digix.api.voice | transcribe | file=recording.webm size=97548
+2026-04-14 06:23:50 | INFO     | digix.api.chat | session=40fd845e-9f49-4145-819f-fc21a747ce49 lang=ar msg='تجاوبني على شو الرؤية تبع الديجيكس اي او اي'
+2026-04-14 06:24:17 | INFO     | digix.api.voice | tts | lang=ar chars=295
+2026-04-14 06:24:17 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-SanaNeural chars=295
+2026-04-14 06:24:20 | INFO     | digix.voice.tts | TTS success | 445248 bytes
