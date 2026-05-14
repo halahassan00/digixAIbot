@@ -1,0 +1,10 @@
+# knowledge_base/requirements_kb.txt
+#
+# Dependencies for the offline knowledge-base pipeline.
+# These are NOT needed in the production Docker container
+# (which runs only the FastAPI backend).
+#
+# Install with:
+#   pip install -r knowledge_base/requirements_kb.txt
+
+pymupdf>=1.24.0

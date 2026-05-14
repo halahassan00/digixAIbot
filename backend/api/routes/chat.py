@@ -3,9 +3,27 @@ backend/api/routes/chat.py
 
 POST /chat — the main chatbot endpoint.
 
+The backend is stateless between requests. The frontend persists
+lead_session and sends it back with every request so the lead
+collection state machine can continue across turns.
+
 API contract (from CONTEXT.md — do not change without team discussion):
-  Request:  { "message": "ما هي خدماتكم؟", "session_id": "abc123", "language": "ar" }
-  Response: { "response": "...", "language": "ar", "collect_lead": false }
+  Request:
+    {
+      "message":      "ما هي خدماتكم؟",
+      "session_id":   "abc123",
+      "language":     "ar",
+      "lead_session": { ...LeadSession fields } | null
+    }
+  Response:
+    {
+      "response":     "...",
+      "language":     "ar",
+      "collect_lead": false,
+      "lead_stage":   "IDLE",
+      "lead_session": { ...updated LeadSession fields },
+      "sources":      [{"source_file": "services_ar.txt", "url": "..."}]
+    }
 
 Session history
 ---------------
@@ -15,10 +33,12 @@ MAX_HISTORY_TURNS turns to bound the context window sent to GPT-4o.
 """
 
 from collections import OrderedDict
+from typing import Optional
 
 from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
+from backend.leads.collector import LeadSession
 from backend.rag.pipeline import run
 from backend.utils.logger import get_logger, log_unanswered
 
@@ -60,16 +80,34 @@ def _update_history(session_id: str, user_msg: str, assistant_msg: str) -> None:
 # Schema
 # ---------------------------------------------------------------------------
 
+class LeadSessionModel(BaseModel):
+    stage:                str  = "IDLE"
+    name:                 str  = ""
+    contact:              str  = ""
+    org:                  str  = ""
+    interest:             str  = ""
+    language:             str  = "ar"
+    offered_this_session: bool = False
+    contact_attempts:     int  = 0
+
+
 class ChatRequest(BaseModel):
-    message:    str = Field(..., min_length=1, max_length=2000)
-    session_id: str = Field(..., min_length=1, max_length=64)
-    language:   str = Field("ar", pattern="^(ar|en)$")
+    message:      str = Field(..., min_length=1, max_length=2000)
+    session_id:   str = Field(..., min_length=1, max_length=64)
+    language:     str = Field("ar", pattern="^(ar|en)$")
+    lead_session: Optional[LeadSessionModel] = None
 
 
 class ChatResponse(BaseModel):
     response:     str
     language:     str
     collect_lead: bool
+    lead_stage:   str
+    lead_session: dict
+    sources:      list[dict] = []
+    # TODO (Person 3): render source under each bot message in the React widget.
+    # Format: "📄 Source: <source_file>" with an optional hyperlink when url is present.
+    # lead_stage lets you optionally render a progress indicator during lead collection.
 
 # ---------------------------------------------------------------------------
 # Route
@@ -81,10 +119,17 @@ async def chat(req: ChatRequest) -> ChatResponse:
 
     history = _get_history(req.session_id)
 
-    result = run(
+    # Reconstruct the LeadSession dataclass from the Pydantic model sent by the client
+    ls: Optional[LeadSession] = (
+        LeadSession(**req.lead_session.model_dump()) if req.lead_session else None
+    )
+
+    result = await run(
         query=req.message,
         chat_history=history,
         language=req.language,
+        lead_session=ls,
+        session_id=req.session_id,
     )
 
     _update_history(req.session_id, req.message, result["response"])
@@ -99,4 +144,7 @@ async def chat(req: ChatRequest) -> ChatResponse:
         response=result["response"],
         language=result["language"],
         collect_lead=result["collect_lead"],
+        lead_stage=result["lead_stage"],
+        lead_session=result["lead_session"],
+        sources=result.get("sources", []),
     )

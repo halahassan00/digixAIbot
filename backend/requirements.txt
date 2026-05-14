@@ -20,3 +20,8 @@ google-auth>=2.29.0
 # Utils
 python-dotenv>=1.0.0
 langdetect>=1.0.9
+
+# Evaluation
+ragas>=0.4.3
+datasets>=2.0.0
+langchain-openai>=0.1.0

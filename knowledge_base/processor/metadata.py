@@ -21,6 +21,11 @@ from pages import STATIC_PAGES  # Source-of-truth page metadata
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "raw")
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "processed", "chunks.json")
 
+# Stems that come from the web scraper (pages.py STATIC_PAGES).
+# Any raw/*.txt file whose stem is NOT in this set is treated as a
+# PDF-sourced training material: category="training", url=None.
+WEB_SLUGS = {"home", "about", "services", "training", "impact", "contact"}
+
 
 def _build_page_index() -> dict[str, dict]:
     """
@@ -51,11 +56,17 @@ def build_chunks(max_chars: int = DEFAULT_MAX_CHARS) -> list[dict]:
 
         page_meta = page_index.get(filename)
         if page_meta is None:
-            # Dynamically discovered pages (training courses, service details)
-            # don't have a STATIC_PAGES entry.  Build a best-effort metadata stub.
             lang = "ar" if filename.endswith("_ar.txt") else "en"
-            category = filename.replace("_ar.txt", "").replace(".txt", "")
-            page_meta = {"url": None, "category": category, "language": lang}
+            stem = (filename
+                    .replace("_ar.txt", "")
+                    .replace("_en.txt", "")
+                    .replace(".txt", ""))
+            if stem in WEB_SLUGS:
+                # Dynamically discovered scraped page without a STATIC_PAGES entry
+                page_meta = {"url": None, "category": stem, "language": lang}
+            else:
+                # PDF-sourced training material
+                page_meta = {"url": None, "category": "training", "language": lang}
 
         filepath = os.path.join(RAW_DIR, filename)
         cleaned = clean_file(filepath)
@@ -63,9 +74,6 @@ def build_chunks(max_chars: int = DEFAULT_MAX_CHARS) -> list[dict]:
 
         for idx, chunk_text_val in enumerate(chunks):
             lang = page_meta["language"]
-            category = page_meta["category"]
-            chunk_id = f"{category}_{lang}_chunk_{idx}" if idx == 0 else \
-                       f"{category}_{lang}_chunk_{idx}"
             # Make the id unique across all pages (include stem)
             stem = filename.replace(".txt", "")
             chunk_id = f"{stem}_chunk_{idx}"

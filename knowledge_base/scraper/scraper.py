@@ -1,8 +1,13 @@
-import requests
-from bs4 import BeautifulSoup
+import hashlib
 import os
 import time
-from pages import STATIC_PAGES, DYNAMIC_SECTIONS
+
+import requests
+from bs4 import BeautifulSoup
+try:
+    from knowledge_base.scraper.pages import STATIC_PAGES, DYNAMIC_SECTIONS
+except ImportError:
+    from pages import STATIC_PAGES, DYNAMIC_SECTIONS
 
 # Where raw text files will be saved
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "raw")
@@ -109,8 +114,24 @@ def discover_child_pages(section):
         print(f"    ERROR discovering child pages: {e}")
         return []
 
-def scrape_all():
-    """Scrape all pages defined in pages.py."""
+def scrape_all(web_hash_store: dict = None) -> dict:
+    """Scrape all pages defined in pages.py.
+
+    Uses hash-based change detection: pages whose extracted text has not
+    changed since the last run are skipped and save_text is not called.
+
+    Parameters
+    ----------
+    web_hash_store : mapping of url → sha256(text) from the previous run.
+                     Pass {} to force a full re-scrape.
+
+    Returns
+    -------
+    Updated hash dict (url → sha256) for every page that was processed.
+    """
+    if web_hash_store is None:
+        web_hash_store = {}
+    hash_store = dict(web_hash_store)
 
     pages_to_scrape = list(STATIC_PAGES)
 
@@ -120,14 +141,22 @@ def scrape_all():
 
     print(f"Starting scrape of {len(pages_to_scrape)} pages...\n")
 
-
     for page in pages_to_scrape:
-        print(f"Scraping: {page['url']}")
+        url = page["url"]
+        print(f"Scraping: {url}")
         try:
             js = page.get("js_render", False)
-            html = fetch_page(page["url"], js_render=js)
+            html = fetch_page(url, js_render=js)
             text = extract_text(html)
+
+            text_hash = hashlib.sha256(text.encode("utf-8")).hexdigest()
+            if hash_store.get(url) == text_hash:
+                print(f"  Skipped (unchanged): {url}")
+                time.sleep(1)
+                continue
+
             save_text(text, page["filename"])
+            hash_store[url] = text_hash
             print(f"  Words extracted: {len(text.split())}")
         except Exception as e:
             print(f"  ERROR: {e}")
@@ -136,6 +165,7 @@ def scrape_all():
         time.sleep(1)
 
     print("\nDone.")
+    return hash_store
 
 
 if __name__ == "__main__":

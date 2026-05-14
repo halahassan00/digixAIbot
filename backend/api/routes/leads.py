@@ -1,27 +1,22 @@
 """
 backend/api/routes/leads.py
 
-POST /leads — manual lead submission.
+POST /leads — manual lead submission from the frontend LeadForm.jsx.
 
 API contract (from CONTEXT.md):
   Request:  { "name": "Ahmed", "email": "a@b.com", "org": "XYZ",
               "interest": "training", "language": "ar" }
   Response: { "success": true }
 
-The lead is pushed to DIGIX AI's Google Sheet via the Sheets API.
 collector.py owns the conversational lead flow triggered from /chat;
-this endpoint handles direct form submissions from the frontend's
-LeadForm.jsx component.
-
-Interface expected from leads modules (not yet built):
-  backend/leads/google_sheets.py must export:
-      push_lead(lead: dict) -> None
+this endpoint handles direct form submissions from the frontend.
 """
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, EmailStr, Field
 
-from backend.leads.google_sheets import push_lead
+from backend.leads.collector import LeadSession
+from backend.leads.google_sheets import LeadSubmissionError, submit_lead
 from backend.utils.logger import get_logger, log_error
 
 router = APIRouter()
@@ -47,21 +42,24 @@ class LeadResponse(BaseModel):
 # ---------------------------------------------------------------------------
 
 @router.post("/leads", response_model=LeadResponse)
-async def submit_lead(req: LeadRequest) -> LeadResponse:
+async def post_lead(req: LeadRequest) -> LeadResponse:
     logger.info(
         "lead | name=%r email=%r org=%r interest=%r lang=%s",
         req.name, req.email, req.org, req.interest, req.language,
     )
 
+    lead = LeadSession(
+        name=req.name,
+        contact=str(req.email),
+        org=req.org,
+        interest=req.interest,
+        language=req.language,
+        stage="SUBMITTED",
+    )
+
     try:
-        push_lead({
-            "name":     req.name,
-            "email":    req.email,
-            "org":      req.org,
-            "interest": req.interest,
-            "language": req.language,
-        })
-    except Exception as exc:
+        await submit_lead(lead, session_id="form-submission")
+    except LeadSubmissionError as exc:
         log_error("Google Sheets push failed", context={"error": str(exc)})
         raise HTTPException(
             status_code=502,

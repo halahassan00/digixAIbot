@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: .
+    image: digix-ai-chatbot:latest
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # ChromaDB vector index — persists across container restarts and image updates.
+      # Populate this once with: docker-compose exec backend python -m backend.vectorstore.chroma_store
+      - ./chroma_data:/app/backend/vectorstore/chroma_data
+
+      # Hugging Face model cache — prevents re-downloading multilingual-e5-base on every restart.
+      - ./hf_cache:/root/.cache/huggingface
+
+      # Google Sheets service account credentials — read-only mount.
+      # Place service_account.json in the same directory as this docker-compose.yml.
+      - ./service_account.json:/app/service_account.json:ro
+
+    restart: unless-stopped

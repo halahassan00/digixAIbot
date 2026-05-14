@@ -204,3 +204,147 @@ RuntimeError: Azure TTS canceled: CancellationReason.Error — Connection was cl
 2026-04-14 06:24:17 | INFO     | digix.api.voice | tts | lang=ar chars=295
 2026-04-14 06:24:17 | INFO     | digix.voice.tts | TTS | lang=ar voice=ar-JO-SanaNeural chars=295
 2026-04-14 06:24:20 | INFO     | digix.voice.tts | TTS success | 445248 bytes
+2026-04-16 22:26:58 | INFO     | digix.api.chat | session=545b7e65-65a2-4a01-b349-f720ff57c07d lang=ar msg='ما هي خدمات Digix AI؟'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-test-1 lang=ar msg='كم سعر كورس Power BI؟'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-test-2 lang=ar msg='نعم'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-test-3 lang=ar msg='ما هي خدمات الشركة؟'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='بدي أسجل في كورس Power BI'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='هالة حسن'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='hala@digix.com'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='شخصي'
+2026-05-13 06:44:30 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-test-1 lang=ar msg='كم سعر كورس Power BI؟'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-test-2 lang=ar msg='نعم'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-test-3 lang=ar msg='ما هي خدمات الشركة؟'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='بدي أسجل في كورس Power BI'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='هالة حسن'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='hala@digix.com'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='شخصي'
+2026-05-13 06:44:54 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-14 23:17:39 | INFO     | digix.api.chat | session=sys-test-1 lang=ar msg='كم سعر كورس Power BI؟'
+2026-05-14 23:17:39 | INFO     | digix.api.chat | session=sys-test-2 lang=ar msg='نعم'
+2026-05-14 23:17:39 | INFO     | digix.api.chat | session=sys-test-3 lang=ar msg='ما هي خدمات الشركة؟'
+2026-05-14 23:17:39 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='بدي أسجل في كورس Power BI'
+2026-05-14 23:17:39 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-14 23:17:39 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='هالة حسن'
+2026-05-14 23:17:39 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='hala@digix.com'
+2026-05-14 23:17:40 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='شخصي'
+2026-05-14 23:17:40 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-14 23:17:40 | INFO     | digix.api.chat | session=sys-ar-1 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-test-1 lang=ar msg='كم سعر كورس Power BI؟'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-test-2 lang=ar msg='نعم'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-test-3 lang=ar msg='ما هي خدمات الشركة؟'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='بدي أسجل في كورس Power BI'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='هالة حسن'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='hala@digix.com'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='شخصي'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-14 23:23:15 | INFO     | digix.api.chat | session=sys-ar-1 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:23:27 | ERROR    | digix | ERROR | Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes. | path=/chat | method=POST | trace=^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hala_/digix-AIbot/venv/lib/python3.13/site-packages/transformers/models/auto/processing_auto.py", line 446, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.
+
+2026-05-14 23:23:27 | INFO     | digix.api.chat | session=sys-en-1 lang=en msg='What is Power BI?'
+2026-05-14 23:29:02 | ERROR    | digix | ERROR | Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes. | path=/chat | method=POST | trace=^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hala_/digix-AIbot/venv/lib/python3.13/site-packages/transformers/models/auto/processing_auto.py", line 446, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.
+
+2026-05-14 23:29:02 | INFO     | digix.api.chat | session=sys-en-1 lang=en msg='What is Power BI?'
+2026-05-14 23:29:13 | ERROR    | digix | ERROR | Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes. | path=/chat | method=POST | trace=^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hala_/digix-AIbot/venv/lib/python3.13/site-packages/transformers/models/auto/processing_auto.py", line 446, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.
+
+2026-05-14 23:29:13 | INFO     | digix.api.chat | session=sys-lead-full lang=ar msg='كم سعر دورة Power BI؟'
+2026-05-14 23:30:24 | INFO     | digix.api.chat | session=sys-ar-1 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:34:12 | INFO     | digix.api.chat | session=sys-ar-1 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:36:11 | ERROR    | digix | ERROR | Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes. | path=/chat | method=POST | trace=^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hala_/digix-AIbot/venv/lib/python3.13/site-packages/transformers/models/auto/processing_auto.py", line 446, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.
+
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-test-1 lang=ar msg='كم سعر كورس Power BI؟'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-test-2 lang=ar msg='نعم'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-test-3 lang=ar msg='ما هي خدمات الشركة؟'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='بدي أسجل في كورس Power BI'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='هالة حسن'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='hala@digix.com'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='شخصي'
+2026-05-14 23:39:13 | INFO     | digix.api.chat | session=sys-5turn lang=ar msg='نعم'
+2026-05-14 23:39:14 | INFO     | digix.api.chat | session=sys-ar-1 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-en-1 lang=en msg='What is Power BI?'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-lead-full lang=ar msg='كم سعر دورة Power BI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-lead-full lang=ar msg='نعم'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-lead-full lang=ar msg='أحمد محمد'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-lead-full lang=ar msg='ahmed@example.com'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-lead-full lang=ar msg='شركة ديناراك'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-lead-full lang=ar msg='نعم'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-oos-1 lang=ar msg='من هو رئيس الأردن؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-lang-1 lang=ar msg='ما هي خدمات الشركة؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=sys-src-1 lang=ar msg='ما هي دورة Power BI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-0 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-1 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-2 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-3 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-4 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-5 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-6 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-7 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-8 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-9 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-10 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-11 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-12 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-13 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-14 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:26 | INFO     | digix.api.chat | session=lat-15 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:27 | INFO     | digix.api.chat | session=lat-16 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:27 | INFO     | digix.api.chat | session=lat-17 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:27 | INFO     | digix.api.chat | session=lat-18 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:27 | INFO     | digix.api.chat | session=lat-19 lang=ar msg='ما هي خدمات DIGIX AI؟'
+2026-05-14 23:39:59 | ERROR    | digix | ERROR | Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes. | path=/chat | method=POST | trace=^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hala_/digix-AIbot/venv/lib/python3.13/site-packages/transformers/models/auto/processing_auto.py", line 446, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized processing class in intfloat/multilingual-e5-base. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.
+
+2026-05-14 23:41:38 | INFO     | digix.api.chat | session=0224cd22-5e50-476b-88dc-96b318ea89e3 lang=ar msg='عندكم تدريب BI?'
+2026-05-14 23:42:09 | INFO     | digix.api.chat | session=0224cd22-5e50-476b-88dc-96b318ea89e3 lang=ar msg=';l suvih'
+2026-05-14 23:42:19 | INFO     | digix.api.chat | session=0224cd22-5e50-476b-88dc-96b318ea89e3 lang=ar msg='كم سعرها'
+2026-05-14 23:42:21 | WARNING  | digix.unanswered | UNANSWERED | session=0224cd22-5e50-476b-88dc-96b318ea89e3 | query='كم سعرها'
+2026-05-14 23:42:46 | INFO     | digix.api.leads | lead | name='حلا' email='hassan.h2307@gmail.com' org='' interest='BI' lang=ar
+2026-05-14 23:42:46 | ERROR    | digix | ERROR | [Errno 2] No such file or directory: 'path/to/service_account.json' | path=/leads | method=POST | trace=       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        filename, require=["client_email", "token_uri"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hala_/digix-AIbot/venv/lib/python3.13/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'path/to/service_account.json'
+

@@ -1,0 +1,49 @@
+# Secrets — never bake into the image
+.env
+service_account.json
+
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Python bytecode and caches
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+*.egg-info
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Node / frontend tooling
+node_modules/
+frontend/node_modules/
+frontend/.cache/
+
+# ChromaDB index — provided as a volume mount at runtime
+chroma_data/
+backend/vectorstore/chroma_data/
+
+# Hugging Face model cache — provided as a volume mount at runtime
+hf_cache/
+
+# Knowledge base scraper state
+knowledge_base/sync/hash_store.json
+
+# Test suite — not needed in the production image
+backend/tests/
+
+# Logs — should not be baked in
+*.log
+backend/logs/
+
+# Development / documentation artefacts
+docs/
+CONTEXT.md
+CLAUDE.md
+eval_data.txt
+eval_data.jsonl

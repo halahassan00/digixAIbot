@@ -100,11 +100,15 @@ def save_chunks(
     batch_size  : max docs per ChromaDB call (keep ≤ 5000)
     """
     for start in range(0, len(ids), batch_size):
+        clean_metas = [
+            {k: ("" if v is None else v) for k, v in m.items()}
+            for m in metadatas[start : start + batch_size]
+        ]
         collection.upsert(
             ids=ids[start : start + batch_size],
             documents=texts[start : start + batch_size],
             embeddings=embeddings[start : start + batch_size],
-            metadatas=metadatas[start : start + batch_size],
+            metadatas=clean_metas,
         )
 
 # ---------------------------------------------------------------------------

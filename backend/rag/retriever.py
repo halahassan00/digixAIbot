@@ -1,7 +1,7 @@
 """
 backend/rag/retriever.py
 
-Queries ChromaDB at runtime — called on every user message.
+Queries ChromaDB at runtime and is called on every user message.
 
 Dependency order:
   embedder.py  ←  chroma_store.py  ←  retriever.py
@@ -21,6 +21,8 @@ from typing import Optional
 
 from backend.rag.embedder import embed_query
 from backend.vectorstore.chroma_store import get_collection, query_chunks
+
+_CANDIDATE_MULTIPLIER = 3
 
 # ---------------------------------------------------------------------------
 # Types
@@ -48,6 +50,27 @@ _collection = get_collection()
 # Retrieve
 # ---------------------------------------------------------------------------
 
+def _source_diverse(chunks: list[RetrievedChunk], n: int) -> list[RetrievedChunk]:
+    """
+    Return up to n chunks keeping at most one chunk per source file.
+
+    Home and about pages are generic enough to score highly for almost any
+    DIGIX AI query, which would crowd out specific pages (services, training,
+    impact) in the top-4 window.  By fetching _CANDIDATE_MULTIPLIER × n
+    candidates and de-duplicating on source_file, we ensure that a single
+    page can claim at most one slot, giving specific pages a fair chance.
+    """
+    seen: set[str] = set()
+    result: list[RetrievedChunk] = []
+    for chunk in chunks:
+        if chunk.source not in seen:
+            seen.add(chunk.source)
+            result.append(chunk)
+        if len(result) >= n:
+            break
+    return result
+
+
 def retrieve(
     query: str,
     language: Optional[str] = None,
@@ -71,26 +94,31 @@ def retrieve(
     """
     query_vector = embed_query(query)
 
+    # Fetch more candidates than needed so source-diversity filtering has
+    # enough material to fill n_results slots from distinct pages.
+    n_candidates = n_results * _CANDIDATE_MULTIPLIER
+
     raw = query_chunks(
         collection=_collection,
         query_embedding=query_vector,
-        n_results=n_results,
+        n_results=n_candidates,
         language=language,
         category=category,
     )
 
     chunks: list[RetrievedChunk] = []
-    for doc, meta, distance in zip(
+    for doc, meta, distance, chunk_id in zip(
         raw["documents"][0],
         raw["metadatas"][0],
         raw["distances"][0],
+        raw["ids"][0],
     ):
         # ChromaDB returns cosine distance (0 = identical, 2 = opposite).
         # Convert to similarity so callers can treat higher = better.
         score = 1.0 - distance
 
         chunks.append(RetrievedChunk(
-            id=meta.get("source_file", "") + f"_chunk_{meta.get('chunk_index', '')}",
+            id=chunk_id,
             text=doc,
             score=score,
             source=meta.get("source_file", ""),
@@ -99,4 +127,4 @@ def retrieve(
             url=meta.get("url", ""),
         ))
 
-    return chunks
+    return _source_diverse(chunks, n_results)

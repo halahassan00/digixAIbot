@@ -2,8 +2,11 @@ import re
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(__file__))
-from cleaner import clean_file, CLEANED_DIR
+try:
+    from knowledge_base.processor.cleaner import clean_file, CLEANED_DIR
+except ImportError:
+    sys.path.insert(0, os.path.dirname(__file__))
+    from cleaner import clean_file, CLEANED_DIR
 
 CHUNKS_DIR = os.path.join(os.path.dirname(__file__), "..", "processed", "chunks")
 
@@ -64,11 +67,14 @@ def _split_long_paragraph(text: str, max_chars: int) -> list[str]:
     buffer_size: int = 0
 
     for sentence in sentences:
-        if buffer_size + len(sentence) > max_chars and buffer:
+        # Account for the joining space when checking headroom
+        join_overhead = 1 if buffer else 0
+        if buffer_size + join_overhead + len(sentence) > max_chars and buffer:
             chunks.append(" ".join(buffer))
             buffer, buffer_size = [], 0
+            join_overhead = 0
         buffer.append(sentence)
-        buffer_size += len(sentence)
+        buffer_size += join_overhead + len(sentence)
 
     if buffer:
         chunks.append(" ".join(buffer))
