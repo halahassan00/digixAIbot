@@ -22,17 +22,8 @@ load_dotenv(_env_path)
 # LLM
 # ---------------------------------------------------------------------------
 
-OPENAI_API_KEY: str = os.environ["OPENAI_API_KEY"]   # required — raises KeyError if missing
+OPENAI_API_KEY: str = os.environ["OPENAI_API_KEY"]
 OPENAI_MODEL:   str = os.getenv("OPENAI_MODEL", "gpt-4o")
-
-# ---------------------------------------------------------------------------
-# Whisper STT (self-hosted)
-# ---------------------------------------------------------------------------
-
-# Model size trade-off — "medium" balances Arabic accuracy vs. RAM (≈5 GB).
-# Options: tiny | base | small | medium | large
-# Change to "large" for best Arabic quality if the server has ≥10 GB RAM.
-WHISPER_MODEL: str = os.getenv("WHISPER_MODEL", "medium")
 
 # ---------------------------------------------------------------------------
 # Azure TTS
@@ -41,8 +32,7 @@ WHISPER_MODEL: str = os.getenv("WHISPER_MODEL", "medium")
 AZURE_TTS_KEY:    str = os.getenv("AZURE_TTS_KEY", "")
 AZURE_TTS_REGION: str = os.getenv("AZURE_TTS_REGION", "eastus")
 
-# Azure neural voice names — ar-JO-ZariyahNeural is the Jordanian Arabic female voice
-AZURE_VOICE_AR: str = os.getenv("AZURE_VOICE_AR", "ar-JO-ZariyahNeural")
+AZURE_VOICE_AR: str = os.getenv("AZURE_VOICE_AR", "ar-JO-SanaNeural")
 AZURE_VOICE_EN: str = os.getenv("AZURE_VOICE_EN", "en-US-JennyNeural")
 
 # ---------------------------------------------------------------------------
